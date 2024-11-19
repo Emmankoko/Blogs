@@ -9,9 +9,9 @@ in etc/npf.conf
 
 -----------------------------------------
 
-$computer1_IP
-$computer2_IP
-$interface
+- $computer1_IP
+- $computer2_IP
+- $interface
 
 altq on $interface cbq bandwidth 100Mb qlimit 60 priority 1 queues { mail, messages }
 // define your child queues here
